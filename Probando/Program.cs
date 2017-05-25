@@ -22,12 +22,12 @@ namespace Probando
 
 			//LINQ ROCKS
 			var consultaLinq = from veh in t.Vehiculos
-							   where veh.Marca == "Peugeot"
+							   where veh.Color == "Rojo"
 							   select veh;
 
 			foreach (var veh in consultaLinq)
 			{
-				Console.WriteLine(veh.Matricula);
+				Console.WriteLine(veh);
 			}
 
 			var vehi = t.Vehiculos.FirstOrDefault(pepe => (pepe.Acelerar(2) == 2) || pepe.Marca == "Hyundai");
@@ -38,7 +38,7 @@ namespace Probando
 			var consultaLambda = t.Vehiculos.FindAll(rafa => rafa.Marca == "Peugeot");
 
 			foreach (var veh in consultaLambda) {
-				Console.WriteLine(veh.Matricula);
+				Console.WriteLine(veh);
 			}
 
 			Console.ReadLine();

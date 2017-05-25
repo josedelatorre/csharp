@@ -27,5 +27,9 @@ namespace Probando.Models
 		{
 			Console.WriteLine("Pi Pi!");
 		}
+
+        public override string ToString() {
+            return String.Format("Matrícula {0} - Marca {1}", Matricula, Marca);
+        }
 	}
 }
