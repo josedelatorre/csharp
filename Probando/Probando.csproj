@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Acelerable.cs" />
     <Compile Include="Models\Arrancable.cs" />
     <Compile Include="Models\Coche.cs" />
     <Compile Include="Models\Taller.cs" />
