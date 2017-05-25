@@ -9,7 +9,7 @@ namespace Probando.Models
 {
 	class Taller
 	{
-		public List<Vehiculo> Vehiculos { get; set; }
+		public List<Vehiculo> Vehiculos { get; set; } 
 
 		public Taller() {
 			Vehiculos = new List<Vehiculo>();
