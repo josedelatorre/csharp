@@ -23,8 +23,9 @@ namespace Probando.Models
 			Velocidad = velocidad;
 		}
 
-		public virtual void Acelerar(double velocidadAumentada) {
+		public virtual double Acelerar(double velocidadAumentada) {
 			Velocidad += velocidadAumentada;
+			return Velocidad;
 		}
 
 		abstract public void Pitar();

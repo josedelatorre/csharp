@@ -12,9 +12,10 @@ namespace Probando.Models
 		{
 		}
 
-		public override void Acelerar(double velocidadAumentada)
+		public override double Acelerar(double velocidadAumentada)
 		{
 			Velocidad += velocidadAumentada*2;
+			return Velocidad;
 		}
 
 		public override void Arrancar()

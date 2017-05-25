@@ -30,10 +30,12 @@ namespace Probando
 				Console.WriteLine(veh.Matricula);
 			}
 
-			var vehi = t.Vehiculos.FirstOrDefault(pepe => pepe.Color == "Azul");
+			var vehi = t.Vehiculos.FirstOrDefault(pepe => (pepe.Acelerar(2) == 2) || pepe.Marca == "Hyundai");
+
+			
 
 			//LAMBDA ROCKS
-			var consultaLambda = t.Vehiculos.FindAll(x => x.Marca == "Peugeot");
+			var consultaLambda = t.Vehiculos.FindAll(rafa => rafa.Marca == "Peugeot");
 
 			foreach (var veh in consultaLambda) {
 				Console.WriteLine(veh.Matricula);
